@@ -1,0 +1,17 @@
+:root {
+  font-family: 'Lato';
+  line-height: 1.5;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+
+  background-image: url('./assets/background.svg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-size: cover;
+  height: 100%;
+  
+}
+
+
+
