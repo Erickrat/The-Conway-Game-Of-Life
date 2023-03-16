@@ -1,5 +1,5 @@
 import closeIcon from './assets/icon-close.svg'
-import { bubblesArray, defaultCellsArray, randomArray, pulsarArray } from "./cells";
+import { bubblesArray, defaultCellsArray, randomArray, pulsarArray, happyArray } from "./cells";
 
 const Modal = ({ rules, setRules, animateModal, setAnimateModal, selectPatterns, setSelectPatterns, setCells }) => {
 
@@ -26,6 +26,9 @@ const Modal = ({ rules, setRules, animateModal, setAnimateModal, selectPatterns,
                     break;
                 case 'pulsarArray':
                     setCells(pulsarArray)
+                    break;
+                case 'happyArray':
+                    setCells(happyArray)
                     break;
                 default:
                     break;
@@ -62,10 +65,11 @@ const Modal = ({ rules, setRules, animateModal, setAnimateModal, selectPatterns,
                     selectPatterns ?
                         <div className='rules-box'>
                             <ul>
-                                <li className='select-arrays' id='bubblesArray' onClick={handleSelectArray}>Bubbles Array</li>
-                                <li className='select-arrays' id='defaultCellsArray' onClick={handleSelectArray}>Default</li>
+                                <li className='select-arrays' id='bubblesArray' onClick={handleSelectArray}>Bubbles</li>
+                                <li className='select-arrays' id='defaultCellsArray' onClick={handleSelectArray}>Empty</li>
                                 <li className='select-arrays' id='randomArray' onClick={handleSelectArray}>Random</li>
                                 <li className='select-arrays' id='pulsarArray' onClick={handleSelectArray}>Pulsar</li>
+                                <li className='select-arrays' id='happyArray' onClick={handleSelectArray}>{'Happy <3'}</li>
                             </ul>
                         </div>
                         : ''

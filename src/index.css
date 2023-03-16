@@ -5,12 +5,12 @@
   display: flex;
   justify-content: center;
 
+
   background-image: url('./assets/background.svg');
   background-repeat: no-repeat;
   background-size:auto;
   background-size: cover;
   height: 100%;
-  
 }
 
 
